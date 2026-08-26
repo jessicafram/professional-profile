@@ -6,7 +6,7 @@ export class Renderer {
 
     async renderExperience() {
         try {
-            const response = await fetch('data/experience.json');
+            const response = await fetch('./src/data/experience.json');
             const data = await response.json();
             const container = document.getElementById('experience-container');
             if (!container) return;
@@ -25,32 +25,21 @@ export class Renderer {
                     <p class="description">${exp.description[this.lang]}</p>
                 </article>
             `).join('');
-        } catch (error) {
-            console.error("Erro na renderização de experiências:", error);
-        }
+        } catch (error) { console.error("Erro renderExperience:", error); }
     }
 
     async renderSummary() {
         try {
-            const response = await fetch('data/summary.json');
+            const response = await fetch('./src/data/summary.json');
             const data = await response.json();
             const container = document.getElementById('summary-text');
-
-            if (!container) return;
-
-            // Pega o texto baseado no perfil e no idioma
-            const text = data[this.profile][this.lang];
-            container.innerText = text;
-
-        } catch (error) {
-            console.error("Erro ao carregar resumo:", error);
-        }
+            if (container) container.innerText = data[this.profile][this.lang];
+        } catch (error) { console.error("Erro renderSummary:", error); }
     }
 
-    // NOVO MÉTODO: Renderizar Projetos
     async renderProjects() {
         try {
-            const response = await fetch('data/projects.json');
+            const response = await fetch('./src/data/projects.json');
             const data = await response.json();
             const container = document.getElementById('projects-container');
             if (!container) return;
@@ -68,56 +57,49 @@ export class Renderer {
                     <p class="project-description">${proj.description[this.lang]}</p>
                 </div>
             `).join('');
-        } catch (error) {
-            console.error("Erro na renderização de projetos:", error);
-        }
+        } catch (error) { console.error("Erro renderProjects:", error); }
     }
 
     async renderSkills() {
         try {
-            const response = await fetch('data/skills.json');
+            const response = await fetch('./src/data/skills.json');
             const data = await response.json();
             const container = document.getElementById('skills-container');
-            if (!container) return;
-
-            container.innerHTML = Object.entries(data).map(([category, langObj]) => `
-            <div class="skill-category">
-                <h4>${category}</h4>
-                <div class="skill-badges">
-                    ${langObj[this.lang].map(skill => `<span class="badge-skill">${skill}</span>`).join('')}
-                </div>
-            </div>
-        `).join('');
-        } catch (error) {
-            console.error("Erro ao renderizar skills:", error);
-        }
+            if (container) {
+                container.innerHTML = Object.entries(data).map(([category, langObj]) => `
+                <div class="skill-category">
+                    <h4>${category}</h4>
+                    <div class="skill-badges">
+                        ${langObj[this.lang].map(skill => `<span class="badge-skill">${skill}</span>`).join('')}
+                    </div>
+                </div>`).join('');
+            }
+        } catch (error) { console.error("Erro renderSkills:", error); }
     }
 
     async renderEducation() {
-        const response = await fetch('data/education.json');
+        const response = await fetch('./src/data/education.json');
         const data = await response.json();
         const container = document.getElementById('education-container');
-        if (!container) return;
-
-        container.innerHTML = data.map(edu => `
-        <div style="margin-top: 15px;">
-            <h4 style="margin: 0; color: var(--primary-color);">${edu.degree[this.lang]}</h4>
-            <p style="margin: 5px 0; font-size: 0.9rem;">${edu.institution} | ${edu.period}</p>
-        </div>
-    `).join('');
+        if (container) {
+            container.innerHTML = data.map(edu => `
+            <div style="margin-top: 15px;">
+                <h4 style="margin: 0; color: var(--primary-color);">${edu.degree[this.lang]}</h4>
+                <p style="margin: 5px 0; font-size: 0.9rem;">${edu.institution} | ${edu.period}</p>
+            </div>`).join('');
+        }
     }
 
     async renderLanguages() {
-        const response = await fetch('data/languages.json');
+        const response = await fetch('./src/data/languages.json');
         const data = await response.json();
         const container = document.getElementById('languages-container');
-        if (!container) return;
-
-        container.innerHTML = data.map(lang => `
-        <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
-            <span style="font-weight: 600;">${lang.language[this.lang]}</span>
-            <span class="badge-skill" style="font-size: 0.7rem;">${lang.level[this.lang]}</span>
-        </div>
-    `).join('');
+        if (container) {
+            container.innerHTML = data.map(lang => `
+            <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 600;">${lang.language[this.lang]}</span>
+                <span class="badge-skill" style="font-size: 0.7rem;">${lang.level[this.lang]}</span>
+            </div>`).join('');
+        }
     }
 }
