@@ -1,0 +1,74 @@
+{
+    "Backend": {
+        "pt": [
+            "Java 21",
+            "Spring Boot",
+            "Node.js",
+            "AdonisJS",
+            "PostgreSQL",
+            "RabbitMQ",
+            "Kafka (Streaming)"
+        ],
+        "en": [
+            "Java 21",
+            "Spring Boot",
+            "Node.js",
+            "AdonisJS",
+            "PostgreSQL",
+            "RabbitMQ",
+            "Kafka (Streaming)"
+        ]
+    },
+    "Frontend": {
+        "pt": [
+            "React 18",
+            "TypeScript",
+            "Vite",
+            "Next.js",
+            "Tailwind CSS",
+            "Design Systems"
+        ],
+        "en": [
+            "React 18",
+            "TypeScript",
+            "Vite",
+            "Next.js",
+            "Tailwind CSS",
+            "Design Systems"
+        ]
+    },
+    "AI & Innovation": {
+        "pt": [
+            "RAG Architecture",
+            "AI Agents",
+            "Prompt Engineering",
+            "LLM Evaluation",
+            "LangChain"
+        ],
+        "en": [
+            "RAG Architecture",
+            "AI Agents",
+            "Prompt Engineering",
+            "LLM Evaluation",
+            "LangChain"
+        ]
+    },
+    "Architecture & QA": {
+        "pt": [
+            "DDD",
+            "Clean Architecture",
+            "SOLID",
+            "Playwright (E2E Specialist)",
+            "Jest",
+            "CI/CD"
+        ],
+        "en": [
+            "DDD",
+            "Clean Architecture",
+            "SOLID",
+            "Playwright (E2E Specialist)",
+            "Jest",
+            "CI/CD"
+        ]
+    }
+}

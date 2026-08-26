@@ -1,0 +1,122 @@
+[
+    {
+        "id": "betalent-api",
+        "title": "BeTalent Payment API",
+        "tags": [
+            "backend",
+            "fullstack"
+        ],
+        "priority": {
+            "backend": 10,
+            "fullstack": 8,
+            "ai": 2
+        },
+        "tech": [
+            "Node.js",
+            "AdonisJS",
+            "Failover",
+            "Idempotency"
+        ],
+        "description": {
+            "pt": "Desenvolvimento de uma API de pagamentos resiliente com suporte a múltiplos gateways e mecanismos de segurança anti-fraude.",
+            "en": "Development of a resilient payment API with multi-gateway support and anti-fraud security mechanisms.",
+            "es": "Desarrollo de una API de pagos resiliente con soporte para múltiples pasarelas y mecanismos de seguridad antifraude."
+        }
+    },
+    {
+        "id": "cs-hub-rebeca",
+        "title": "CS Hub & Rebeca AI",
+        "tags": [
+            "ai",
+            "fullstack",
+            "backend"
+        ],
+        "priority": {
+            "ai": 10,
+            "fullstack": 9,
+            "backend": 6
+        },
+        "tech": [
+            "Python",
+            "RAG",
+            "AI Agents",
+            "LangChain"
+        ],
+        "description": {
+            "pt": "Arquitetura de uma assistente socrática baseada em IA e RAG para democratização do ensino técnico e suporte a jornadas de aprendizado.",
+            "en": "Architecture of a Socratic AI assistant based on RAG to democratize technical education and support learning journeys.",
+            "es": "Arquitectura de una asistente de IA socrática basada en RAG para democratizar la educación técnica y apoyar las jornadas de aprendizaje."
+        }
+    },
+    {
+        "id": "boticario-case",
+        "title": "Boticário Management Dashboard",
+        "tags": [
+            "frontend",
+            "fullstack"
+        ],
+        "priority": {
+            "frontend": 10,
+            "fullstack": 8,
+            "backend": 1
+        },
+        "tech": [
+            "React 18",
+            "Vite",
+            "Playwright",
+            "E2E Testing"
+        ],
+        "description": {
+            "pt": "Interface premium de alta performance com 100% de cobertura de testes E2E, focada em métricas de negócio e UX refinada.",
+            "en": "High-performance premium interface with 100% E2E test coverage, focused on business metrics and refined UX.",
+            "es": "Interfaz premium de alto rendimiento con cobertura total de pruebas E2E, centrada en métricas de negocio y UX refinada."
+        }
+    },
+    {
+        "id": "site-carlinhos",
+        "title": "Carlinhos Lagoas (Commercial & Logic)",
+        "tags": [
+            "frontend",
+            "fullstack"
+        ],
+        "priority": {
+            "frontend": 9,
+            "fullstack": 8,
+            "backend": 5
+        },
+        "tech": [
+            "JS Puro",
+            "Business Logic",
+            "UX/UI",
+            "Calculations Engine"
+        ],
+        "description": {
+            "pt": "Site institucional elegante com sistema integrado de cálculos dinâmicos para prescrição de treinos, unindo design refinado à lógica funcional.",
+            "en": "Elegant institutional website with an integrated dynamic calculation system for training prescriptions, combining refined design with functional logic.",
+            "es": "Sitio web institucional elegante con un sistema integrado de cálculos dinámicos para prescripciones de entrenamiento, combinando diseño refinado con lógica funcional."
+        }
+    },
+    {
+        "id": "natal-escarlate",
+        "title": "O Natal Escarlate (Interactive Game)",
+        "tags": [
+            "frontend",
+            "fullstack"
+        ],
+        "priority": {
+            "frontend": 7,
+            "fullstack": 6,
+            "backend": 3
+        },
+        "tech": [
+            "State Management",
+            "Interactive Narrative",
+            "Motion UI"
+        ],
+        "description": {
+            "pt": "Projeto interativo com atmosfera narrativa, focado em gerenciamento de estado complexo e experiência do usuário imersiva.",
+            "en": "Interactive project with a narrative atmosphere, focused on complex state management and immersive user experience.",
+            "es": "Proyecto interactivo con atmósfera narrativa, centrado en la gestión de estados complejos y una experiencia de usuario inmersiva."
+        }
+    }
+]

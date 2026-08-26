@@ -1,0 +1,17 @@
+{
+    "fullstack": {
+        "pt": "Engenheira de Software com 15 anos de estrada, focada em construir produtos digitais que unem arquitetura robusta a interfaces premium. Minha atuação vai além do código: lidero uma comunidade de 150+ desenvolvedores, acreditando que a mentoria e a empatia são as chaves para elevar a barra técnica de qualquer time. Sou movida por proatividade e pela entrega de soluções que resolvam problemas reais de negócio.",
+        "en": "Software Engineer with 15 years of experience, focused on building digital products that combine robust architecture with premium interfaces. My role goes beyond code: I lead a community of 150+ developers, believing that mentorship and empathy are key to raising the technical bar of any team. I am driven by proactivity and delivering solutions that solve real business problems.",
+        "es": "Ingeniera de Software con 15 años de trayectoria, enfocada en construir productos digitales que combinan una arquitectura robusta con interfaces premium. Mi función va más allá del código: lidero una comunidad de más de 150 desarrolladores, convencida de que la mentoría y la empatía son las claves para elevar el nivel técnico de cualquier equipo."
+    },
+    "backend": {
+        "pt": "Arquiteta de Sistemas especializada em ecossistemas de alta escala (Java/Node). Com 15 anos de experiência, foco em resiliência, mensageria e consistência de dados. Como mentora, minha missão é disseminar boas práticas de Clean Architecture e DDD, garantindo que a evolução técnica do time caminhe junto com a estabilidade do produto.",
+        "en": "Systems Architect specialized in high-scale ecosystems (Java/Node). With 15 years of experience, I focus on resilience, messaging, and data consistency. As a mentor, my mission is to spread Clean Architecture and DDD best practices, ensuring the team's technical evolution moves alongside product stability.",
+        "es": "Arquitecta de Sistemas especializada en ecosistemas de alta escala (Java/Node). Con 15 años de experiencia, me enfoco en la resiliencia, la mensajería y la consistencia de los datos. Como mentora, mi misión es difundir las mejores prácticas de Clean Architecture y DDD."
+    },
+    "ai": {
+        "pt": "Especialista em IA Generativa e Engenharia de Software, focada na implementação de pipelines RAG e Agentes Autônomos. Utilizo minha base de 15 anos em arquitetura para auditar e elevar a qualidade técnica de modelos de IA. Acredito na liderança através do exemplo e no compartilhamento de conhecimento para desmistificar a IA no desenvolvimento de software.",
+        "en": "Generative AI Specialist and Software Engineer, focused on implementing RAG pipelines and Autonomous Agents. I leverage my 15-year background in architecture to audit and elevate the technical quality of AI models. I believe in leadership by example and knowledge sharing to demystify AI in software development.",
+        "es": "Especialista en IA Generativa e Ingeniería de Software, enfocada en la implementación de pipelines RAG y Agentes Autónomos. Utilizo mi base de 15 años en arquitectura para auditar y elevar la calidad técnica de los modelos de IA."
+    }
+}

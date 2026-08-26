@@ -1,0 +1,29 @@
+[
+    {
+        "id": "freelance-consulting",
+        "company": "Freelance Consulting",
+        "role": {
+            "pt": "Especialista em Tecnologia & Mentora",
+            "en": "Technology Specialist & Mentor",
+            "es": "Especialista en Tecnología y Mentora"
+        },
+        "period": "2009 - Present",
+        "tags": [
+            "backend",
+            "frontend",
+            "fullstack",
+            "ai"
+        ],
+        "priority": {
+            "backend": 10,
+            "frontend": 8,
+            "fullstack": 10,
+            "ai": 9
+        },
+        "description": {
+            "pt": "Liderança técnica em projetos Web focada em Clean Code e arquitetura escalável. Mentoria de desenvolvedores aplicando padrões de projeto modernos.",
+            "en": "Technical leadership in Web projects focused on Clean Code and scalable architecture. Mentorship for developers applying modern Design Patterns.",
+            "es": "Liderazgo técnico en proyectos Web enfocado en Clean Code y arquitectura escalable. Mentoría para desarrolladores aplicando patrones de diseño modernos."
+        }
+    }
+]

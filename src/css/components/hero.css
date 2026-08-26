@@ -1,0 +1,120 @@
+/* src/css/components/hero.css */
+
+.hero {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px 0;
+    margin: 0 auto var(--spacing-lg) auto;
+    max-width: 900px;
+}
+
+.hero-info {
+    flex: 1;
+    min-width: 0;
+    /* Evita que o texto empurre a foto para fora */
+}
+
+/* --- CONTROLE TOTAL DOS ÍCONES --- */
+.social-links {
+    display: flex !important;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-icon {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 42px !important;
+    /* Trava o tamanho do botão */
+    height: 42px !important;
+    background-color: var(--primary-color) !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* AQUI É O PULO DO GATO: Amestrando o SVG */
+.social-icon svg {
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+    min-height: 20px !important;
+    fill: white !important;
+    display: block;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-light) !important;
+    transform: translateY(-3px);
+}
+
+/* --- CARD DA FOTO --- */
+.photo-card {
+    position: relative;
+    /* Necessário para posicionar a tachinha */
+    width: 240px !important;
+    height: 240px !important;
+    background: white;
+    padding: 12px;
+    border-radius: 4px;
+    /* Bordas menos arredondadas para parecer foto física */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+
+    /* O ângulo do charme: levemente para a esquerda */
+    transform: rotate(-3deg);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.photo-card:hover {
+    transform: rotate(0deg) scale(1.05);
+    z-index: 10;
+}
+
+/* --- A TACHINHA (O Pulo do Gato) --- */
+.photo-card::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    /* Fica metade para fora do card */
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 22px;
+    height: 22px;
+
+    /* Efeito de metal escovado com o Azul Royal no centro */
+    background: radial-gradient(circle at 30% 30%, #ffffff 0%, #002366 40%, #001544 100%);
+
+    border-radius: 50%;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 20;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Sombra da tachinha no card para dar profundidade */
+.photo-card::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 51%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    filter: blur(3px);
+    z-index: 15;
+}
+
+.hero-image {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 12px;
+    object-fit: cover;
+}

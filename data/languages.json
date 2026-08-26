@@ -1,0 +1,38 @@
+[
+    {
+        "language": {
+            "pt": "Português",
+            "en": "Portuguese",
+            "es": "Portugués"
+        },
+        "level": {
+            "pt": "Nativo",
+            "en": "Native",
+            "es": "Nativo"
+        }
+    },
+    {
+        "language": {
+            "pt": "Inglês",
+            "en": "English",
+            "es": "Inglés"
+        },
+        "level": {
+            "pt": "Avançado / Fluente",
+            "en": "Advanced / Fluent",
+            "es": "Avanzado / Fluido"
+        }
+    },
+    {
+        "language": {
+            "pt": "Espanhol",
+            "en": "Spanish",
+            "es": "Español"
+        },
+        "level": {
+            "pt": "Intermediário",
+            "en": "Intermediate",
+            "es": "Intermedio"
+        }
+    }
+]

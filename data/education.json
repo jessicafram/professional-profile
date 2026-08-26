@@ -1,0 +1,12 @@
+[
+    {
+        "institution": "Centro Universitário IBMR",
+        "degree": {
+            "pt": "Bacharelado em Ciência da Computação",
+            "en": "Bachelor of Computer Science",
+            "es": "Grado en Ciencias de la Computación"
+        },
+        "period": "In Progress",
+        "status": "Academic"
+    }
+]
