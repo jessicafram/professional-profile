@@ -4,7 +4,7 @@ export class I18n {
     }
 
     async loadTranslations() {
-        const response = await fetch(`/src/locales/${this.lang}.json`);
+        const response = await fetch(`src/locales/${this.lang}.json`);
         const translations = await response.json();
 
         // Aplica as traduções nos elementos que têm o atributo data-i18n

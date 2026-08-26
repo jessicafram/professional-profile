@@ -6,7 +6,7 @@ export class Renderer {
 
     async renderExperience() {
         try {
-            const response = await fetch('./data/experience.json');
+            const response = await fetch('data/experience.json');
             const data = await response.json();
             const container = document.getElementById('experience-container');
             if (!container) return;
@@ -32,7 +32,7 @@ export class Renderer {
 
     async renderSummary() {
         try {
-            const response = await fetch('./data/summary.json');
+            const response = await fetch('data/summary.json');
             const data = await response.json();
             const container = document.getElementById('summary-text');
 
@@ -50,7 +50,7 @@ export class Renderer {
     // NOVO MÉTODO: Renderizar Projetos
     async renderProjects() {
         try {
-            const response = await fetch('./data/projects.json');
+            const response = await fetch('data/projects.json');
             const data = await response.json();
             const container = document.getElementById('projects-container');
             if (!container) return;
@@ -75,7 +75,7 @@ export class Renderer {
 
     async renderSkills() {
         try {
-            const response = await fetch('./data/skills.json');
+            const response = await fetch('data/skills.json');
             const data = await response.json();
             const container = document.getElementById('skills-container');
             if (!container) return;
@@ -94,7 +94,7 @@ export class Renderer {
     }
 
     async renderEducation() {
-        const response = await fetch('./data/education.json');
+        const response = await fetch('data/education.json');
         const data = await response.json();
         const container = document.getElementById('education-container');
         if (!container) return;
@@ -108,7 +108,7 @@ export class Renderer {
     }
 
     async renderLanguages() {
-        const response = await fetch('./data/languages.json');
+        const response = await fetch('data/languages.json');
         const data = await response.json();
         const container = document.getElementById('languages-container');
         if (!container) return;
